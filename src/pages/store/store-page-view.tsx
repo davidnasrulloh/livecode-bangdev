@@ -5,9 +5,13 @@ import FooterStoreSection from "../../sections/store/footer/footer-store-section
 type Props = {}
 
 const StorePageView = (props: Props) => {
+
+
+
   return (
     <>
         <NavbarStoreSection/>   
+        
         <Outlet/>
         <FooterStoreSection/>
     </>
