@@ -1,10 +1,12 @@
 import { useParams } from "react-router-dom"
+import useFetchBasic from "../../../hooks/use-fetch-basic"
 
 type Props = {}
 
 const AnimeDetailsPageView = (props: Props) => {
   const {id} = useParams()
-  console.log(id)
+  const { data, error, loading, fetchData } = useFetchBasic(`/user/users/${id}`)
+  console.log(data)
   return (
     <div>AnimeDetailsPageView</div>
   )
